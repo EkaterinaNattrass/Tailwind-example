@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .heading {
+        @apply 
+        text-7xl 
+        font-bold 
+        text-transparent
+        bg-gradient-to-r
+        from-sky-500
+        to-teal-500 
+        bg-clip-text
+        p-4 
+        text-center
+    }
+
+   .btn {
+       @apply 
+       text-neutral-700
+         bg-sky-300
+         hover:bg-sky-500
+         py-2
+         px-4 
+         m-10
+         h-12
+         font-semibold 
+         rounded-md
+    }
+    .paragraph {
+        @apply 
+        text-xl
+        text-neutral-700
+        p-4
+        rounded-md
+        my-4
+        leading-loose
+        bg-gradient-to-r from-sky-200 to-teal-200
+    }
+}
