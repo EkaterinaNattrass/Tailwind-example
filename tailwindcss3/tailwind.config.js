@@ -6,6 +6,8 @@ module.exports = {
       'display': ['Lemon', 'serif']
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp')
+  ],
 }
 

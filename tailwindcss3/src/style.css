@@ -106,7 +106,7 @@
          shadow-lg
     }
     .paragraph {
-        @apply 
+        @apply
         text-xl
         text-neutral-700
         p-6
@@ -118,3 +118,7 @@
         shadow-lg
     }
 }
+
+/* group modififer - to affect the whole group */
+/* pear modifier  - to affect all the children */
+/* rtl - right to left direction; ltr - left to right direction */
