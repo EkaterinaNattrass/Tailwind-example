@@ -3,17 +3,93 @@
 @tailwind utilities;
 
 @layer components {
+    .link {
+        @apply
+        active:text-sky-500
+        active:font-bold 
+        border-t-4 
+        border-transparent
+        hover:border-teal-400
+        font-display
+        text-transparent
+        bg-gradient-to-r
+        from-sky-500
+        to-teal-500 
+        bg-clip-text
+    }
     .heading {
         @apply 
-        text-7xl 
+        text-7xl
         font-bold 
+        font-display
         text-transparent
         bg-gradient-to-r
         from-sky-500
         to-teal-500 
         bg-clip-text
         p-4 
+        mt-4
+        mb-8
+        mx-4
         text-center
+        shadow-lg
+    }
+
+    .container {
+        @apply 
+        w-full 
+        flex 
+        mt-6
+        snap-x 
+        snap-mandatory
+        overflow-x-auto
+    }
+
+    .card {
+        @apply
+        shadow-lg 
+        scale-90 
+        hover:scale-100 
+        transition ease-in-out
+        duration-500
+        my-2 
+        mx-1 p-4 
+        my-2 
+        flex 
+        flex-col 
+        rounded-md 
+        border-gray-200 
+        border
+        even:bg-pink-100
+        odd:bg-sky-100
+        empty:hidden /* if there's no content */
+    }
+
+    .h2 {
+        @apply 
+        text-xl
+        font-bold 
+        font-display
+        text-transparent
+        bg-gradient-to-r
+        from-sky-500
+        to-teal-500 
+        bg-clip-text
+        p-4 
+        my-4
+        text-center
+
+    }
+
+    .h3 {
+        @apply 
+        font-display
+        text-transparent
+        bg-gradient-to-r
+        from-sky-500
+        to-teal-500 
+        bg-clip-text
+        my-2
     }
 
    .btn {
@@ -27,15 +103,18 @@
          h-12
          font-semibold 
          rounded-md
+         shadow-lg
     }
     .paragraph {
         @apply 
         text-xl
         text-neutral-700
-        p-4
+        p-6
         rounded-md
-        my-4
+        mb-8
+        mx-4
         leading-loose
         bg-gradient-to-r from-sky-200 to-teal-200
+        shadow-lg
     }
 }
